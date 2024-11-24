@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Table</title>
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="./CSS/main.css">
+</head>
+<body>
+
+  <div class="w-50 m-auto my-5 p-4 shadow-lg rounded-3">
+    <h1 class="text-center text-primary">CRUD System</h1>
+    <form>
+      <input type="text" class="form-control my-3" placeholder="Product Name ..." id="productName">
+      <input type="text" class="form-control my-3" placeholder="Product Category ..." id="productCategory">
+      <input type="number" class="form-control my-3" placeholder="Product Price ..." id="productPrice">
+      <textarea rows="4" class="form-control my-3" placeholder="Product Description ..." id="productDesc"></textarea>
+      <button type="button" onclick="addProduct();" class="btn btn-outline-primary" id="btn-add">Add Product</button>
+      <button type="button" onclick="updateProduct();" class="btn btn-outline-success" id="btn-updt">Update Product</button>
+    </form>
+  </div>
+
+  <div class="container">
+    <div class="row gy-3" id="demo">
+      <h2 class="p"></h2>
+    </div>
+  </div>
+
+
+  
+  <script src="./JS/main.js"></script>
+</body>
+</html>
