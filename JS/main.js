@@ -28,23 +28,32 @@ function displayProducts(){
   var cartona="";
   for(var i=0; i<productsBox.length; i++) {
     cartona+= `
-      <div class="col-md-3 rounded-3">
-        <div class="content-img">
-          <img src="./Imgs/2.jpg" class="w-100 text-center" alt="">
-        </div>
-        <div class="content p-3">
-          <p>${productsBox[i].category}</p>
-          <h4 class="p-0">${productsBox[i].name}</h4>
-          <p>Price : ${productsBox[i].price} EGP</p>
-          <p>${productsBox[i].description}</p>
-          <button onclick="getProductDetails(${i})" type="button" class="btn btn-outline-success w-100 mb-2">Update</button>
-          <button onclick="deleteProduct(${i})" type="button" class="btn btn-outline-danger w-100 mb-2">Delete</button>
-        </div>
+          <div class="col-md-3 rounded-3">
+          <div class="content-img">
+            <img src="./Imgs/2.jpg" class="w-100 text-center" alt="">
+          </div>
+          <div class="content p-3">
+            <p>${productsBox[i].category}</p>
+            <h4 class="p-0">${productsBox[i].name}</h4>
+            <p>Price : ${productsBox[i].price} EGP</p>
+            <p>${productsBox[i].description}</p>
+            <button onclick="getProductDetails(${i})" type="button" class="btn btn-outline-success w-100 mb-2">Update</button>
+            <button onclick="deleteProduct(${i})" type="button" class="btn btn-outline-danger w-100 mb-2">Delete</button>
+          </div>
       </div>
     `
   }
   document.getElementById('demo').innerHTML=cartona;
 }
+
+          /* <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>  */
+
+
 
 function clearInput(){
   productNameInput.value ="";
